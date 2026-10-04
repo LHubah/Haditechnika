@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Az egész tankos oldal */
+
+.tank-page {
+    padding: 20px 35px;
+}
+
+
+/* Egy tank teljes sora */
+
+.tank-section {
+    min-height: 300px;
+    padding: 35px 15px;
+    border-bottom: 2px solid black;
+}
+
+
+/* BAL OLDALI SZÖVEG */
+
+.tank-text {
+    padding: 20px;
+}
+
+.tank-text h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.tank-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* JOBB OLDALI RÉSZ */
+
+.tank-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+/* ÁBRA */
+
+.chart-placeholder {
+    width: 65%;
+    height: 230px;
+
+    border: 2px dashed #999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #888;
+}
+
+
+/* KÉP + NYÍL */
+
+.image-box {
+    width: 220px;
+    height: 250px;
+
+    border: 3px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Kép helye */
+
+.tank-image {
+    flex: 1;
+}
+
+
+/* Nyíl */
+
+.arrow-button {
+    height: 55px;
+
+    background-color: white;
+
+    border: none;
+    border-top: 3px solid black;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* Nyíl fölé húzva az egeret */
+
+.arrow-button:hover {
+    background-color: #eeeeee;
+}
+
+
+/* Mobil */
+
+@media (max-width: 767px) {
+
+    .tank-section {
+        padding: 25px 10px;
+    }
+
+    .tank-content {
+        flex-direction: column;
+    }
+
+    .chart-placeholder {
+        width: 100%;
+    }
+
+    .image-box {
+        width: 220px;
+    }
+
+}
