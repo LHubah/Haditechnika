@@ -1,284 +1,129 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tankok</title>
+    <title>Luftwaffel --  Harckocsik</title>
     <link rel="stylesheet" href="allrounder.css">
-    <link rel="stylesheet" href="Fo.css">
-    <link rel="stylesheet" href="Tankok.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="tank.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
 </head>
-
-
 <body>
+
     <header>
         <a href="index.html" aria-label="Főoldal">
-            <img src="/Kepek/Luftwaffel logó.png"
-                 alt="Főoldal"
-                 class="logo">
+            <img src="/Kepek/Luftwaffel logó.png" alt="Főoldal" class="logo">
         </a>
-        <nav class="nav">
 
+        <nav class="nav">
             <ul class="navbar">
                 <li class="nav-item" data-projectile="rifle">
-
                     <a href="Fegyverek.html" class="nav-link">
-
-                        <img src="/Kepek/rifle.png"
-                             alt="Fegyverek"
-                             title="Fegyverek"
-                             class="nav-icon">
-
+                        <img src="/Kepek/rifle.png" alt="Fegyverek" title="Fegyverek" class="nav-icon">
                     </a>
-
                 </li>
-                <li class="nav-item" data-projectile="tank">
-
-                    <a href="Tankok.html" class="nav-link">
-
-                        <img src="/Kepek/tank.png"
-                             alt="Tankok"
-                             title="Tankok"
-                             class="nav-icon">
-
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="/Kepek/Luftwaffel logó.png" alt="Főoldal" title="Főoldal" class="nav-icon">
                     </a>
-
                 </li>
                 <li class="nav-item" data-projectile="plane">
-
                     <a href="Repulok.html" class="nav-link">
-
-                        <img src="/Kepek/fighter-plane.png"
-                             alt="Repülők"
-                             title="Repülők"
-                             class="nav-icon">
-
+                        <img src="/Kepek/fighter-plane.png" alt="Repulok" title="Repulok" class="nav-icon">
                     </a>
-
                 </li>
-
             </ul>
-
         </nav>
-
     </header>
-    <main class="container-fluid tank-page">
-        <section class="tank-section row align-items-center">
-            <div class="col-md-5 tank-text">
 
-                <h2>Tank A</h2>
+    <div class="tartalom">
+        <h1>Harckocsik</h1>
 
-                <p>
-                    Ide kerül majd a tankhoz tartozó szöveg.
-                </p>
-
-                <p>
-                    Ide kerülhetnek az érdekességek és további
-                    információk.
-                </p>
-
+        <div class="row">
+            <div class="col-12">
+                <h2>A harckocsik története</h2>
+                <h3>Az első világháború és az első harckocsik</h3>
+                <img class="tankkep" src="Kepek/M1A_modern.jpg" alt="Ez egy harckocsi" >
+                <p>- Az első harckocsik az első világháború állóháborújából születtek Flandriában és Észak-Franciaországban. Olyan járműre volt szükség, amely átjut a szögesdróton és a lövészárkokon, védi a legénységét, és közben elég tűzerőt ad. Az ötlet Leonardo da Vinciig nyúlik vissza, de megvalósításához a belső égésű motor és a lánctalp kellett.
+                - Nagy-Britannia: a Landship Bizottságot többek között Winston Churchill támogatta. Amerikai Holt-traktorokból indultak ki, ebből lett a Little Willie (1915), majd a jellegzetes romboid alakú Mother. Erre épült az Mark I, az első valódi harckocsi, amelyet 1916-tól gyártottak sorozatban.
+                - Franciaország: a Schneider és a St. Chamond rohamkocsik instabilak voltak és rosszul jutottak át az árkokon. A Renault FT–17 viszont a háború talán legsikeresebb harckocsija lett, és a kialakítása mintát adott a későbbi típusoknak. 1944-ig használták.
+                - Németország: az A7V ormótlan és sikertelen volt (18 fős személyzet, csak 20 darab készült), ezért zsákmányolt harckocsikat is használtak. Az első harckocsicsatát 1918. április 24-én vívták Villers-Bretonneux-nál brit Mark IV-esek és német A7V-k. Harckocsik ellen acélmagos lőszert és a Tankgewehr M1918 puskát vetették be.
+                - A háború után az a nézet maradt fenn, hogy a harckocsit szétszórva, a gyalogságot kísérve kell használni. Ez 1939 és 1942 között súlyos vereségekhez vezetett a német villámháborúval szemben.</p>
+                <hr style="border: none; height: 4px; background-color: black;">
             </div>
-            <div class="col-md-7 tank-content">
-                <div class="chart-placeholder">
-
-                    Ábra helye
-
-                </div>
-
-                <div class="image-box">
-
-                    <div class="tank-image">
-                    </div>
-
-                    <button type="button"
-                            class="arrow-button"
-                            aria-label="További információ">
-
-                        <i class="bi bi-arrow-down"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section class="tank-section row align-items-center">
-            <div class="col-md-5 tank-text">
-
-                <h2>Tank B</h2>
-
-                <p>
-                    Ide kerül majd a tankhoz tartozó szöveg.
-                </p>
-
-                <p>
-                    Ide kerülhetnek az érdekességek és további
-                    információk.
-                </p>
-
-            </div>
-
-            <div class="col-md-7 tank-content">
-
-                <div class="chart-placeholder">
-
-                    Ábra helye
-
-                </div>
-
-                <div class="image-box">
-
-                    <div class="tank-image">
-
-
-                    </div>
-                    <button type="button"
-                            class="arrow-button"
-                            aria-label="További információ">
-
-                        <i class="bi bi-arrow-down"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="tank-section row align-items-center">
-
-
-            <div class="col-md-5 tank-text">
-
-                <h2>Tank C</h2>
-
-                <p>
-                    Ide kerül majd a tankhoz tartozó szöveg.
-                </p>
-
-                <p>
-                    Ide kerülhetnek az érdekességek és további
-                    információk.
-                </p>
-
-            </div>
-
-
-
-            <div class="col-md-7 tank-content">
-
-
-                <div class="chart-placeholder">
-
-                    Ábra helye
-
-                </div>
-
-
-
-                <div class="image-box">
-
-
-                    <div class="tank-image">
-
-
-                    </div>
-
-
-
-                    <button type="button"
-                            class="arrow-button"
-                            aria-label="További információ">
-
-                        <i class="bi bi-arrow-down"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
- 
-
-        <section class="tank-section row align-items-center">
-
-
-
-            <div class="col-md-5 tank-text">
-
-                <h2>Tank D</h2>
-
-                <p>
-                    Ide kerül majd a tankhoz tartozó szöveg.
-                </p>
-
-                <p>
-                    Ide kerülhetnek az érdekességek és további
-                    információk.
-                </p>
-
-            </div>
-
-
-
+            
+        </div>
         
-            <div class="col-md-7 tank-content">
-
-
-      
-                <div class="chart-placeholder">
-
-                    Ábra helye
-
-                </div>
-
-
-
-              
-                <div class="image-box">
-
-
+        
+        <div class="row">
+            <div class="col-12">
+                <h3>A világháború közötti időszak</h3>
+                <img class="tankkep" src="Kepek/M1A_modern.jpg" alt="Ez egy harckocsi" >
+                <p>
+                    - A háború után a britek és az amerikaiak leépítették harckocsierőiket, a franciák pedig csak gyalogságtámogatásra használták őket.
+                    - Fuller és Liddell Hart brit teoretikusok elméletei otthon kevés figyelmet kaptak, külföldön annál többet. A Szovjetunióban Tuhacsevszkij a mozgékonyságot tartotta a harckocsi fő erényének, ezért önálló harckocsiegységeket szerveztek.
+                    - Németország a versailles-i korlátozásokat megszegve fegyverkezett újra. Náluk a páncélosok kerültek a hadműveletek középpontjába, a gyalogság feladata az lett, hogy kövesse őket. Az első Panzer-egységet 1933-ban állították fel, a háborúig a PzKpfw I–IV típusokat fejlesztették ki.
+                    - A Szovjetunió példátlan méretű fegyverkezésbe kezdett, ebből nőtt ki később a T–34 és a KV–1.
+                    - Spanyol polgárháború (1936–1939): itt próbálták ki új fegyvereiket a németek, az olaszok és a szovjetek. Wilhelm von Thoma arra jutott, hogy a könnyű harckocsiknak nincs jövőjük. Itt tesztelték először a Blitzkrieg elméletét.
+                </p>
                 
-                    <div class="tank-image">
-
-                      
-                    </div>
-
-
-
-                    
-                    <button type="button"
-                            class="arrow-button"
-                            aria-label="További információ">
-
-                        <i class="bi bi-arrow-down"></i>
-
-                    </button>
-
-                </div>
-
+                <hr style="border: none; height: 4px; background-color: black;">
             </div>
+        </div>
 
-        </section>
+        <div class="row">
+            <div class="col-12">
+                <h3>A második világháború</h3>
+                <img class="tankkep" src="Kepek/M1A_modern.jpg" alt="Ez egy harckocsi" >
+                <p>
+                    - Lengyelország (1939): a német villámháborúban az összevont páncélosegységek és a zuhanóbombázók együtt törték át a frontot, a gépesített gyalogság pedig követte őket. A lengyel hadseregnek egyetlen könnyűharckocsi-dandárja volt. Ismert német parancsnokok: Guderian és Rommel.
+                    - Franciaország (1940): a szövetségesek számban és fegyverzetben fölényben voltak, de rossz vezetés és elavult harcászat miatt vereséget szenvedtek. Az újítók közé tartozott Charles de Gaulle. A könnyű harckocsi kategória gyakorlatilag elavult.
+                    - A szövetségesek válasza: az amerikai M3 Lee/Grant után jött az M4 Sherman, amelyből több mint 58 000 darab készült. A britek a Cromwell és a Comet típussal csak 1943-tól tudtak ütőképes választ adni, a 17 fontos ágyú hatékony volt a német nehéz harckocsik ellen.
+                    - Keleti front (1941-től, Barbarossa hadművelet): itt zajlottak a háború nagy páncéloscsatái. A szovjetek eleinte óriási veszteségeket szenvedtek, később korszerűbb típusokkal ellensúlyoztak.
+                    - Egyre vastagabb páncél, nagyobb ágyú és erősebb motor jellemezte a fejlesztést, egyszerű, tömeggyártásra alkalmas szerkezettel. Ekkor születtek a Panther, a Tiger és a Tiger II, az M26 Pershing, a Sherman Firefly, valamint az ISZ-sorozat.
+                    - A háború végére kialakult a ma is meghatározó klasszikus forma: egy torony és egy fő löveg. A többtornyos és óriás konstrukciók (T–100, Maus) zsákutcának bizonyultak.
+                </p>
+                
+                <hr style="border: none; height: 4px; background-color: black;">
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-12">
+                <h3>A hidegháborús fegyverkezés</h3>
+                <img class="tankkep" src="Kepek/M1A_modern.jpg" alt="Ez egy harckocsi" >
+                <p>
+                    - Két tömb állt szemben. A Varsói Szerződésben a szovjet „tömeghadsereg” elve érvényesült, sok és átlagos minőségű harckocsival. A NATO kevesebb, de minőségi és jobban túlélő harckocsit állított szembe ezzel.
+                    - Szovjet oldal: ISZ–3, T–10, majd a T–62 simacsövű 115 mm-es ágyúval. Ezt követte a 125 mm-es ágyúval felszerelt T–64, T–72, valamint a T–80 és T–90.
+                    - NATO oldal: a brit Centurion 1949-től szolgált és sikeres volt Koreában, rá épült később a Chieftain és a Merkava. Ezután jöttek az M48 és M60 Patton, a Leopard 1 és az AMX–30, egységesen 105 mm-es löveggel.
+                    - Az 1970-es években megjelent a Chobham-típusú kompozit (rétegelt) páncél, amely akár 90%-kal is csökkentheti a kumulatív lövedékek hatását. A Leopard 2 és az M1 Abrams egy közös USA–NSZK program kudarcából született.
+                    - A hetvenes évektől elektronikus tűzvezetés, lézeres távmérők, éjjellátók és ABV-védelem is került a harckocsikba.
+                    - Arab–izraeli háborúk: az izraeli páncélosok lettek a világ legsikeresebb harckocsizói. Az 1967-es háború után Izrael kifejlesztette a Merkavát, amelyben a motor elöl van a személyzet védelmére, és hátul 9 fő szállítására is van hely.
+                    - Afganisztán (1979–1988): olcsó kézi páncéltörő fegyverek, aknák és házi készítésű csapdák pusztították a szovjet harckocsikat a hegyvidéken. Ez a harckocsik létjogosultságáról szóló vita egyik fő érve lett. konstrukciók (T–100, Maus) zsákutcának bizonyultak.
+                </p>
+                
+                <hr style="border: none; height: 4px; background-color: black;">
+            </div>
+        </div>
 
-    </main>
+        <div class="row">
+            <div class="col-12">
+                <img class="tankkep" src="Kepek/M1A_modern.jpg" alt="Ez egy harckocsi" >
+                <h3>Az öbölháború és utóhatásai</h3>
+                <p>
+                    - 1991: az öbölháborúban vetették be először élesben az M1 Abramst és a Challenger 1-et.
+                    - Az iraki T–72-eseket még a régebbi nyugati típusok is legyőzték, főleg a gyenge optika és a rossz lőszerelhelyezés miatt. Egy találat után a T–72 gyakran felrobbant, míg a nyugati harckocsik többsége javítható maradt.
+                    - Az M1A1-ből 14 semmisült meg (ebből 4 baráti tűz miatt), de a megbízhatósága gyenge volt. A nyugati fölény kulcsa a fejlett tűzvezetés és az éjszakai harcképesség volt.
+                    - 2003 után főleg a kézi páncéltörő fegyverek (RPG-7, Kornet) és az IED-k okoztak veszteséget. Irakban 553 Abrams szorult gyári javításra. A pusztulást jellemzően az üzemanyag-tüzek okozták. Szíriában és Jemenben páncéltörő rakéták is megsemmisítettek M1-eseket.
+                </p>
+                
+                <hr style="border: none; height: 4px; background-color: black;">
+            </div>
+        </div>
 
-
+    </div>
+    
+    
 </body>
-
 </html>
