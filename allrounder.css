@@ -23,6 +23,7 @@ header {
 
 body {
     background-image: url("Kepek/camo_v3.png");
+    opacity: 0.93;
 }
 
 .tartalom {
