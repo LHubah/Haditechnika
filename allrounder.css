@@ -67,6 +67,7 @@ body {
     background: #3A62CD;
     cursor: pointer;
 }
+
 @media (max-width: 700px) {
     header {
         margin: 10px 10px 0;
