@@ -16,6 +16,7 @@ p {
     margin: auto;
     max-width: 450px;
     border-radius: 10px;
+    margin-top: 5px;
 }
 .szoveg{
     padding: 25px;
@@ -64,7 +65,11 @@ p {
 
 .kepek{
     display: block;
-    margin: 25px 0px 25px 50px;
+    margin: 25px 0px 25px 35px;
     max-width: 350px;
     border-radius: 10px;
+}
+#ww2{
+    max-width: 400px;
+    margin: 25px 0px 0px 0px;
 }
