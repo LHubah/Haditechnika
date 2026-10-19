@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    padding: 0px;
 }
 
 #modelContainer {
@@ -15,6 +16,7 @@
     background: #181818;
     border-radius: 12px;
     overflow: hidden;
+    padding: 0px;
 }
 
 #close {
@@ -34,6 +36,7 @@
     height: 100%;
     touch-action: none;
     cursor: grab;
+    padding: 0px;
 }
 
 #viewer:active {
@@ -68,10 +71,11 @@ box-sizing: border-box;
 }
 
 .help-title {
+    
 font-size: 13px;
 font-weight: bold;
 color: #ffffff;
-
+padding: 0px;
 padding-bottom: 10px;
 margin-bottom: 8px;
 border-bottom: 1px solid #454545;
@@ -79,6 +83,7 @@ border-bottom: 1px solid #454545;
 
 .help-row {
 display: flex;
+padding: 0px;
 flex-direction: column;
 gap: 3px;
 margin-bottom: 10px;
