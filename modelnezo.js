@@ -75,7 +75,6 @@ function setupViewer() {
 function loadModel(modelPath) {
     setupViewer();
 
-    // Az előző modell eltávolítása
     if (currentModel) {
         scene.remove(currentModel);
 
@@ -113,7 +112,6 @@ function loadModel(modelPath) {
                 model.scale.setScalar(2.5 / maxDimension);
             }
 
-            // A modell talpa kerüljön a rácsra
             const scaledBox = new THREE.Box3().setFromObject(model);
             model.position.y -= scaledBox.min.y;
 
@@ -126,7 +124,6 @@ function loadModel(modelPath) {
             controls.target.copy(finalCenter);
             controls.update();
 
-            // Kamera visszaállítása az új modellhez
             camera.position.set(
                 finalCenter.x + 5,
                 finalCenter.y + 3,
@@ -166,7 +163,6 @@ function openModel(modelPath) {
     }
 }
 
-// Mindkét szöveg kattintható
 document.querySelectorAll(".model-link").forEach((element) => {
     element.addEventListener("click", () => {
         openModel(element.dataset.model);
