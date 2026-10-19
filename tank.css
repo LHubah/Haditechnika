@@ -30,3 +30,11 @@ div {
 .oldal{
     border: 2px solid black;
 }
+
+#tankbox
+{
+    background-color: #66666650;
+    border-radius: 10px;
+    height: fit-content;
+
+}
