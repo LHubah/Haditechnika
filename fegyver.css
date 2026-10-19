@@ -87,7 +87,7 @@ p {
 }
 
 
-@media (min-width: 576px) and (max-width: 1000px) {
+@media (min-width: 576px) and (max-width: 1200px) {
 
     .tartalom .col-lg-3,
     .tartalom .col-lg-4,
@@ -137,7 +137,7 @@ p {
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1800px) {
+@media (min-width: 1201px) and (max-width: 1500px) {
     .tartalom .szoveg {
         padding: 20px;
     }
