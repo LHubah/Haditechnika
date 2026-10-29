@@ -34,3 +34,11 @@ window.addEventListener("scroll", updateTimeline, { passive: true });
 window.addEventListener("resize", updateTimeline);
 
 updateTimeline();
+
+document.querySelectorAll('.korszak-kartya').forEach(kartya => {
+    kartya.onclick = function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' });
+    };
+});
