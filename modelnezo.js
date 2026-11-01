@@ -57,15 +57,15 @@ function setupViewer() {
         0xffffff, 0x505060, 2.0
     ));
 
-    const keyLight = new THREE.DirectionalLight(0xffffff, 3.0);
+    const keyLight = new THREE.DirectionalLight(0xffffff, 8.0);
     keyLight.position.set(5, 10, 7);
     scene.add(keyLight);
 
-    const fillLight = new THREE.DirectionalLight(0xc4d8ff, 1.2);
+    const fillLight = new THREE.DirectionalLight(0xc4d8ff, 4.2);
     fillLight.position.set(-6, 4, -5);
     scene.add(fillLight);
 
-    const rimLight = new THREE.DirectionalLight(0xffffff, 1.5);
+    const rimLight = new THREE.DirectionalLight(0xffffff, 5.5);
     rimLight.position.set(0, 6, -8);
     scene.add(rimLight);
 
