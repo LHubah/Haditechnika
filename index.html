@@ -41,23 +41,39 @@
         <h1 style="text-align: center;">Haditechnika fejlődése</h1>
 
         <div>
+
             <aside class="timeline" id="timeline">
                 <div class="timeline-line">
                     <div class="timeline-progress" id="timelineProgress"></div>
-                    <div class="timeline-event" data-year="1900"><span>1900</span></div>
-                    <div class="timeline-event" data-year="1914"><span>1914</span></div>
-                    <div class="timeline-event" data-year="1918"><span>1918</span></div>
-                    <div class="timeline-event" data-year="1939"><span>1939</span></div>
-                    <div class="timeline-event" data-year="1945"><span>1945</span></div>
-                    <div class="timeline-event" data-year="1955"><span>1955</span></div>
-                    <div class="timeline-event" data-year="1975"><span>1975</span></div>
-                    <div class="timeline-event" data-year="1990"><span>1990</span></div>
-                    <div class="timeline-event" data-year="2000"><span>2000</span></div>
+
+                    <div class="timeline-event" data-year="1900" data-target="kezdetek">
+                        <span>1900</span>
+                    </div>
+                    <div class="timeline-event" data-year="1914" data-target="elso-vilaghaboru">
+                        <span>1914</span>
+                    </div>
+                    <div class="timeline-event" data-year="1919" data-target="ket-vilaghaboru-kozott">
+                        <span>1919</span>
+                    </div>
+                    <div class="timeline-event" data-year="1939" data-target="masodik-vilaghaboru">
+                        <span>1939</span>
+                    </div>
+                    <div class="timeline-event" data-year="1946" data-target="hideghaboru">
+                        <span>1946</span>
+                    </div>
+                    <div class="timeline-event" data-year="1990" data-target="modern-haditechnika">
+                        <span>1990</span>
+                    </div>
+                    <div class="timeline-event" data-year="2000" data-target="oldal-vege">
+                        <span>2000</span>
+                    </div>
+
                     <div class="timeline-cursor" id="timelineCursor">
                         <span id="currentYear">1900</span>
                     </div>
                 </div>
             </aside>
+
         </div>
 
         <div class="korszakok col-lg-11" style="margin: 50px;">
@@ -134,8 +150,14 @@
                     </div>
 
                     <div class="col-lg-4 korszak-kep">
-                        <img src="Kepek/Kezdet.jpg" alt="A 20. század elejének katonai technológiája">
-                        <span class="kepalairas">A századforduló fegyverei a hagyományos hadviseléstől a gépesítés felé vezettek.</span>
+                        <div>
+                            <img src="Kepek/Kezdet.jpg" alt="A 20. század elejének katonai technológiája">
+                            <span class="kepalairas">A századforduló fegyverei a hagyományos hadviseléstől a gépesítés felé vezettek.</span>
+                        </div>
+                        <div>
+                            <img src="Kepek/Plane before WW1.JPG" alt="Kezdetleges katonai repülőgép a 20. század elején">
+                            <span class="kepalairas">A repülőgépek megjelenése új korszakot nyitott a hadviselésben: kezdetben elsősorban felderítésre használták őket, de hamar felismerték katonai jelentőségüket.</span>
+                        </div>
                     </div>
 
                     <p class="kiemelt-mondat">A modern hadviselés alapjai már megszülettek: nagyipari fegyvergyártás, gépesítés és egyre hatékonyabb tűzerő.</p>
@@ -217,7 +239,7 @@
                     </div>
 
                     <div class="col-lg-4 korszak-kep">
-                        <img src="Kepek/WW2 tanks.jpg" alt="Tiger I, T-34 és Sherman harckocsik">
+                        <img src="Kepek/WW2 tanks.jpg" alt="Tiger I, T-34 és Sherman harckocsik" style="margin-top: 60px; height: 15rem;">
                         <span class="kepalairas">A Tiger I, a T-34 és a Sherman jól szemléltetik a második világháború eltérő harckocsi-fejlesztési megközelítéseit.</span>
                     </div>
 
@@ -274,7 +296,7 @@
                     <div class="col-lg-4">
                         <div class="row korszak-kepek-sor">
                             <div class="korszak-kep">
-                                <img src="Kepek/Cold war tanks.png" alt="Hidegháborús harckocsik">
+                                <img src="Kepek/Cold war tanks.png" alt="Hidegháborús harckocsik" style="height: 30rem;">
                                 <span class="kepalairas">A T-55, T-72 és T-80 a szovjet harckocsifejlesztés meghatározó típusai voltak.</span>
                             </div>
                         </div>
@@ -309,26 +331,29 @@
 
                     <div class="col-lg-4">
                         <div class="korszak-kep">
-                            <img src="Kepek/Modern jets.webp" alt="Modern amerikai sugárhajtású repülőgépek">
-                            <span class="kepalairas">Az amerikai vadászgépek fejlődését a lopakodó kialakítás, a fejlett radarok és az egyre szorosabban összekapcsolt fedélzeti rendszerek határozzák meg.</span>
-                        </div>
-
-                        <div class="korszak-kep">
                             <img src="Kepek/Modular weaponry.jpg" alt="A mai fegyverek moduláris kialakítása">
                             <span class="kepalairas">A moduláris fegyverek különböző kiegészítőkkel és cserélhető alkatrészekkel igazíthatók az eltérő harci feladatokhoz és preferenciákhoz.</span>
                         </div>
+
+                        <div class="korszak-kep">
+                            <img src="Kepek/Modern jets.webp" alt="Modern amerikai sugárhajtású repülőgépek">
+                            <span class="kepalairas">Az amerikai vadászgépek fejlődését a lopakodó kialakítás, a fejlett radarok és az egyre szorosabban összekapcsolt fedélzeti rendszerek határozzák meg.</span>
+                        </div>
+                        
                     </div>
 
                     <div class="col-lg-4">
                         <div class="korszak-kep">
-                            <img src="Kepek/modern tanks.jpg" alt="Két példa modern harckocsira">
+                            <img src="Kepek/modern tanks.jpg" alt="Két példa modern harckocsira" style="height: 13rem;">
                             <span class="kepalairas">A különböző nemzetek modern harckocsijai eltérő megoldásokkal ötvözik a tűzerőt, a mozgékonyságot és a páncélvédelmet.</span>
                         </div>
                         <div class="korszak-kep">
-                            <img src="Kepek/Modern drones.jpg" alt="Drón technológia a napjainkban">
+                            <img src="Kepek/Modern drones.jpg" alt="Drón technológia a napjainkban" style="height: 12rem;">
                             <span class="kepalairas">A pilóta nélküli légi járművek felderítési, megfigyelési és támadó feladatokban is egyre fontosabb szerepet töltenek be.</span>
                         </div>
                     </div>
+
+                    <div id="oldal-vege"></div>
 
                     <div class="col-lg-8 korszak-szoveg">
                         <h2>Precíziós fegyverek és modern szárazföldi erők</h2>
