@@ -1,5 +1,7 @@
 h1 {
+    margin-top: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 p {
     text-align: justify;
@@ -135,7 +137,8 @@ p {
     font-weight: bold;
 }
 .kartya-szoveg h1{
-    font-size: 24px;
+    margin-top: 0;
+    font-size: 22px;
 }
 .kartya-szoveg p{
     margin-bottom: 0;
@@ -180,22 +183,17 @@ p {
     width: 100%;
     border-radius: 10px;
 }
-.korszak-tartalom{
-    align-items: center;
-}
 .korszak-tartalom img{
     max-height: 300px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
 }
-.korszak-tartalom span{
-    margin-bottom: 50px;
-}
 .korszak-tartalom h2{
     margin-top: 25px;
     color: #3A62CD;
+    font-weight: bold;
 }
 .korszak-tartalom p{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
 }
 .kepalairas{
@@ -206,6 +204,7 @@ p {
     font-style: italic;
 }
 .kiemelt-mondat{
+    margin: 20px 0;
     border-left: 4px solid #3A62CD;
     border-radius: 5px;
     font-weight: bold;
@@ -214,6 +213,39 @@ p {
     padding: 12px 15px;
     background: #4E4E4E;
     color: #AFAFAF;
+}
+
+#kezdetek .korszak-kep img{
+    height: 15rem;
+}
+#elso-vilaghaboru .korszak-kep img{
+    margin-top: 60px;
+    height: 30rem;
+}
+#elso-vilaghaboru p{
+    font-size: 18px;
+}
+#ket-vilaghaboru-kozott .korszak-kep img{
+    height: 18rem;
+}
+#masodik-vilaghaboru .korszak-kep img{
+    margin-top: 40px;
+    height: 17rem;
+}
+#hideghaboru .korszak-kep img{
+    margin-top: 60px;
+    height: 16rem;
+}
+#modern-haditechnika .korszak-kep img{
+    margin-top: 50px;
+    height: 17rem;
+}
+
+.korszak-kep img{
+    margin-top: 40px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 @media (max-width: 1100px) {
