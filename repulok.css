@@ -1,0 +1,40 @@
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: large;
+    margin: 10px;
+}
+.repkep{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 25px;
+}
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 25px; 
+}
+h3 {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+div {
+    text-align: justify;
+    padding: 25px;
+}
+.oldal{
+    border: 2px solid black;
+}
+
+#box
+{
+    background-color: #66666650;
+    border-radius: 10px;
+    height: fit-content;
+
+}
