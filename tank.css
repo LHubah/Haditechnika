@@ -42,3 +42,13 @@ div {
     width: 150px;
     height: 100px;
 }
+button
+{
+    border-radius: 5px;
+    background-color: #4E4E4E;
+    color: #fff;
+}
+button:hover
+{
+    background-color: #3A62CD;
+}
