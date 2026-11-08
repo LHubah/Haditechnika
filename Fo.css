@@ -248,34 +248,207 @@ p {
     border-radius: 10px;
 }
 
+
 @media (max-width: 1100px) {
+    .timeline {
+        display: none;
+    }
+
     .korszakok {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .tartalom {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    header {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
+
 @media (max-width: 991px) {
+    .korszakok,
+    .tartalom > .col-lg-11 {
+        margin: 25px !important;
+    }
+
     .korszak-tartalom {
         display: flex;
         flex-direction: column;
     }
 
-    .korszak-tartalom .korszak-szoveg { order: 1; }
-    .korszak-tartalom .korszak-kep { order: 2; }
-}
-@media (max-width: 768px) {
-    .timeline { display: none; }
-}
-@media (max-width: 700px) {
-    .korszakok {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
+    .korszak-tartalom .korszak-szoveg {
+        order: 1;
     }
 
-    .korszak-kartya { height: 320px; }
-    .kartya-szoveg { padding: 14px 12px; }
-    .kartya-szoveg h1 { font-size: 19px; }
+    .korszak-tartalom .korszak-kep {
+        order: 2;
+    }
+
+    .korszak-tartalom img,
+    .korszak-kep img {
+        height: auto !important;
+        max-height: 350px;
+        margin-top: 15px !important;
+    }
+
+    .tortenelmi-korszak h1 {
+        font-size: 28px;
+    }
+
+    .korszak-tartalom p {
+        font-size: 17px;
+    }
+
+    .kepalairas {
+        font-size: 13px;
+    }
 }
+
+@media (max-width: 700px) {
+    header {
+        margin: 10px 10px 0;
+        padding: 6px;
+        gap: 5px;
+    }
+
+    .logo {
+        width: 65px;
+    }
+
+    .navbar {
+        gap: 5px;
+        padding: 3px;
+    }
+
+    .nav-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .tartalom {
+        margin: 10px 10px 25px;
+        padding: 8px;
+    }
+
+    .tartalom > .col-lg-11,
+    .korszakok {
+        margin: 15px 5px !important;
+    }
+
+    .korszakok {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .korszak-kartya {
+        height: 200px;
+    }
+
+    .kartya-szoveg {
+        padding: 10px;
+    }
+
+    .kartya-szoveg h1 {
+        font-size: 17px;
+    }
+
+    .kartya-szoveg h3 {
+        font-size: 13px;
+    }
+
+    .kartya-szoveg p {
+        font-size: 12px;
+    }
+
+    .tartalom > h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .tortenelmi-korszak {
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .tortenelmi-korszak h1 {
+        font-size: 23px;
+    }
+
+    .tortenelmi-korszak h2,
+    .korszak-tartalom h2 {
+        font-size: 19px;
+        margin: 18px 0 10px;
+    }
+
+    .korszak-tartalom p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .korszak-tartalom img,
+    .korszak-kep img {
+        width: 100%;
+        height: auto !important;
+        max-height: 300px;
+        margin-top: 15px !important;
+    }
+
+    .kepalairas {
+        font-size: 12px;
+    }
+
+    .kiemelt-mondat {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
 @media (max-width: 450px) {
-    .korszakok { grid-template-columns: 1fr; }
-    .korszak-kartya { height: 350px; }
+    .korszakok {
+        grid-template-columns: 1fr;
+    }
+
+    .korszak-kartya {
+        height: 230px;
+    }
+
+    .tartalom {
+        margin: 8px;
+        padding: 5px;
+    }
+
+    header {
+        margin: 8px 8px 0;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .nav-item {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
 }
