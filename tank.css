@@ -1,3 +1,6 @@
+body {
+  cursor: url('Kepek/tank_cursor.png'), auto;
+}
 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
