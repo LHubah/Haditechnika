@@ -77,10 +77,10 @@ body {
     height: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     .logo{
-        width: 100px;
+        width: 130px;
         height: 65px;
     }
     .navbar{
@@ -91,7 +91,7 @@ body {
         height: 55px;
     }
     header {
-        margin: 0px 10px 55px 10px;
+        margin: 0px 25px 55px 25px;
     }
     .nav-icon{
         width: 45px;
@@ -102,9 +102,17 @@ body {
         height: 55px;
     }
     .tartalom{
-        margin: 10px 10px 30px;
+        margin: 0px 25px 25px !important;
     }
     .tartalom div{
         padding-right: 10px;
+    }
+}
+@media (max-width: 1700px) and (min-width: 600px) {
+    .tartalom{
+        margin: 0px 35px 35px !important;
+    }
+    header {
+        margin: 20px 35px 35px;
     }
 }

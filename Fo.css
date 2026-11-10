@@ -252,7 +252,7 @@ p {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1700px) {
     .timeline {
         display: none;
     }
@@ -267,7 +267,7 @@ p {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
     .korszakok,
     .tartalom > .col-lg-11 {
         margin: 25px !important;
