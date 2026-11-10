@@ -90,78 +90,98 @@ p {
     margin: 1.5625rem 0 0;
 }
 
+@media (max-width: 1100px) {
 
-@media (min-width: 576px) and (max-width: 1200px) {
-
-    .tartalom .col-lg-3,
-    .tartalom .col-lg-4,
-    .tartalom .col-lg-8,
-    .tartalom .col-lg-9 {
+    .jobbra,
+    .balra,
+    .szoveg{
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .jobbra,
+    .balra{
+        padding: 0 15px;
+    }
+    .szoveg{
+        padding: 12px 15px;
+    }
+    .evo,
+    .kepek{
+        display: block;
         width: 100%;
-        max-width: 100%;
-        flex: 0 0 100%;
-        float: none;
-    }
-
-    .tartalom .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .tartalom .kepek {
-        width: auto;
-        max-width: 75% !important;
-        height: auto;
-        margin: 20px auto !important;
-    }
-
-    .tartalom .evo {
-        width: 80%;
         max-width: 450px;
         height: auto;
-        margin: 10px auto;
+        margin: 15px auto !important;
     }
-
-    .tartalom .szoveg {
-        display: block;
-        padding: 20px 25px;
+    #ww2{
+        max-width: 450px;
+        margin: 15px auto !important;
     }
-
-    .tartalom h2 {
-        font-size: 32px;
+    h2 {
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        margin: 25px 10px 15px;
     }
-
-    .tartalom h3 {
-        font-size: 24px;
+    h3 {
+        font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+        margin: 10px 0;
     }
-
-    .tartalom p {
-        font-size: 17px !important;
-        line-height: 1.5;
+    p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+    .szoveg{
+        padding-top: 5px;
+        padding-bottom: 20px;
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1500px) {
-    .tartalom .szoveg {
-        padding: 20px;
-    }
+@media (max-width: 600px) {
 
-    .tartalom h2 {
-        font-size: 32px;
+    .tartalom{
+        padding: 8px;
     }
-
-    .tartalom p {
-        font-size: 16px;
+    h2 {
+        font-size: 1.4rem;
+        margin: 20px 5px 12px;
     }
-
-    .tartalom .kepek {
+    h3 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin: 8px 0;
+    }
+    p {
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+        text-align: left;
+        margin: 8px 0;
+    }
+    .szoveg{
+        padding: 8px 5px 15px;
+    }
+    .jobbra,
+    .balra{
+        padding: 0 5px;
+    }
+    .evo,
+    .kepek,
+    #ww2{
+        width: 100%;
         max-width: 100%;
-        height: auto;
-        margin: 20px auto;
+        max-height: 280px;
+        object-fit: contain;
+        margin: 10px auto !important;
     }
-
-    .tartalom .evo {
-        max-width: 100%;
-        height: auto;
+    .elo-nezet-kep {
+        width: min(250px, 80vw);
+        height: 150px;
     }
+}
+body {
+    overflow-x: hidden;
 }

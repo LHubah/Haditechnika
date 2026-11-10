@@ -29,6 +29,10 @@ body {
 }
 
 .tartalom {
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
+
     background-color: rgba(175, 175, 175, 0.93);
     padding: 5px;
     margin: 5px 50px 50px 50px;
@@ -75,30 +79,30 @@ body {
 
 @media (max-width: 700px) {
 
-    .logo {
+    .logo{
         width: 100px;
         height: 65px;
     }
-
-    .navbar {
+    .navbar{
         gap: 5px;
     }
-
-    .nav-item {
+    .nav-item{
         width: 55px;
         height: 55px;
     }
-
     header {
         margin: 0px 10px 55px 10px;
     }
-    .nav-icon {
+    .nav-icon{
         width: 45px;
         height: 45px;
     }
-    .tank {
+    .tank{
         width: 55px;
         height: 55px;
+    }
+    .tartalom{
+        margin: 10px 10px 30px;
     }
     .tartalom div{
         padding-right: 10px;
