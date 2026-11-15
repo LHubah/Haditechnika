@@ -2,9 +2,10 @@ body {
   cursor: url('Kepek/home_cursor.png'), auto;
 }
 h1 {
-    margin-top: 40px;
+    font-size: 64px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 p {
     text-align: justify;
@@ -251,6 +252,11 @@ p {
     border-radius: 10px;
 }
 
+.evolucio{
+    width: 1850px;
+    display: block;
+    margin: auto;
+}
 
 @media (max-width: 1700px) {
     .timeline {
