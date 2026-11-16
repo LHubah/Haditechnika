@@ -1,5 +1,9 @@
 body {
-  cursor: url('Kepek/home_cursor.png'), auto;
+    cursor: url('Kepek/home_cursor.png'), auto;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
 }
 h1 {
     font-size: 64px;
@@ -255,7 +259,7 @@ p {
 .evolucio{
     width: 1600px;
     display: block;
-    margin: auto;
+    margin-left: 4.5rem;
 }
 
 @media (max-width: 1700px) {
@@ -270,6 +274,9 @@ p {
     .tartalom {
         margin-left: 25px;
         margin-right: 25px;
+    }
+    .evolucio{
+        margin: auto;
     }
 }
 
@@ -309,6 +316,9 @@ p {
 
     .kepalairas {
         font-size: 13px;
+    }
+    .evolucio{
+        margin: auto;
     }
 }
 
@@ -390,12 +400,7 @@ p {
         font-size: 16px;
         padding: 10px;
     }
-}
-
-body {
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
+    .evolucio{
+        margin: auto;
+    }
 }
