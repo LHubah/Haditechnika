@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
 body {
     cursor: url('Kepek/home_cursor.png'), auto;
     overflow-x: hidden;
@@ -6,7 +8,7 @@ img {
     max-width: 100%;
 }
 h1 {
-    font-size: 64px;
+    font-size: 108px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -15,6 +17,13 @@ p {
     text-align: justify;
     line-height: 1.7;
 }
+.big-shoulders-stencil-war {
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
 .timeline{
     position: fixed;
     top: 20vh;
