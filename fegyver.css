@@ -51,6 +51,7 @@ h2 {
 }
 
 h3 {
+    color: #3A62CD;
     font-weight: bold;
     margin-left: 0.3rem;
     font-size: clamp(1.1rem, 1.8vw, 1.5rem);

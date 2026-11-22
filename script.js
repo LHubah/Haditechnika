@@ -13,6 +13,19 @@ function updateTimeline() {
     const points = [];
 
     events.forEach(event => {
+        event.style.cursor = "pointer";
+
+        event.addEventListener("click", () => {
+            const target = document.getElementById(event.dataset.target);
+
+            if (!target) return;
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+
         const target = document.getElementById(event.dataset.target);
 
         if (!target) {
@@ -20,10 +33,10 @@ function updateTimeline() {
             return;
         }
 
-    const position =
-        target.getBoundingClientRect().top +
-        window.scrollY -
-        window.innerHeight * 0.1;
+        const position =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            window.innerHeight * 0.1;
 
         points.push({
             year: Number(event.dataset.year),
