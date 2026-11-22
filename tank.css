@@ -58,3 +58,7 @@ button:hover
 {
     background-color: #3A62CD;
 }
+li{
+    font-size: large;
+    text-align: justify;
+}
