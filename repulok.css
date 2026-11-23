@@ -43,6 +43,13 @@ div {
 
 }
 #flag{
-    width: 150px;
-    height: 100px;
+    width: 90px;
+    height: 60px;
+}
+#repbox
+{
+    background-color: #66666650;
+    border-radius: 10px;
+    height: fit-content;
+
 }
